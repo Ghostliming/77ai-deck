@@ -4285,50 +4285,83 @@
 
 /* ---- Topic II · AI overlay two-phase (page 15) ---- */
 .deck-native .slide-insight-overlay {
-  justify-content: flex-start;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  justify-content: center;
+  padding-top: 96px !important;
+  padding-bottom: 52px !important;
 }
 
-.deck-native .slide-insight-overlay .headline {
-  margin-bottom: 4px;
+.deck-native .slide-insight-center {
+  flex: 0 0 auto;
+  width: 100%;
+  transform: translateY(36px);
 }
 
-.deck-native .slide-insight-overlay .insight-phase-wrap {
-  gap: 8px;
-  margin-top: 10px !important;
-}
-
-.deck-native .slide-insight-overlay .insight-phase {
-  padding: 10px 14px 12px;
-}
-
-.deck-native .slide-insight-overlay .phase-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.deck-native .slide-insight-overlay .phase-row .phase-thumb {
-  align-self: flex-start;
-  margin-top: 34px;
-}
-
-.deck-native .slide-insight-overlay .phase-row-main {
-  flex: 1;
-  min-width: 0;
-}
-
-.deck-native .slide-insight-overlay .phase-row-main .phase-label {
+.deck-native .slide-insight-overlay .kicker {
   margin-bottom: 8px;
 }
 
+.deck-native .slide-insight-overlay .headline {
+  margin-bottom: 0;
+}
+
+.deck-native .slide-insight-overlay .insight-phase-board {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 68px;
+  grid-template-rows: auto auto auto;
+  column-gap: 14px;
+  row-gap: 6px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.deck-native .slide-insight-overlay .insight-phase-board > .build-phase {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.deck-native .slide-insight-overlay .insight-phase-board > .phase-demo-slot:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.deck-native .slide-insight-overlay .insight-phase-board > .phase-bridge {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+}
+
+.deck-native .slide-insight-overlay .insight-phase-board > .use-phase {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.deck-native .slide-insight-overlay .insight-phase-board > .phase-demo-slot:nth-child(5) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.deck-native .slide-insight-overlay .phase-demo-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+}
+
+.deck-native .slide-insight-overlay .insight-phase {
+  padding: 8px 12px 10px;
+}
+
+.deck-native .slide-insight-overlay .phase-label {
+  margin: 0 0 8px;
+}
+
 .deck-native .slide-insight-overlay .phase-grid {
-  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
 }
 
 .deck-native .slide-insight-overlay .phase-item {
-  padding: 10px 12px;
+  padding: 8px 10px;
 }
 
 .deck-native .slide-insight-overlay .phase-item p {
@@ -4338,10 +4371,11 @@
 
 .deck-native .slide-insight-overlay .phase-bridge {
   padding: 0;
+  margin: 0;
 }
 
 .deck-native .slide-insight-overlay .phase-item.phase-hero {
-  padding: 10px 14px;
+  padding: 8px 12px;
 }
 
 .deck-native .slide-insight-overlay .phase-item.phase-hero p {

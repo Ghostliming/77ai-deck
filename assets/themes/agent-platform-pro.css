@@ -1,0 +1,34 @@
+/* theme: agent-platform-pro — ui-ux-pro-max adapted for enterprise AI tech deck */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #070d1a;
+  --bg-soft: #0b1220;
+  --surface: #111827;
+  --surface-2: #1e293b;
+  --surface-elevated: #162032;
+  --border: rgba(148, 163, 184, 0.14);
+  --border-strong: rgba(148, 163, 184, 0.28);
+  --text-1: #f8fafc;
+  --text-2: #94a3b8;
+  --text-3: #64748b;
+  --accent: #0ea5e9;
+  --accent-2: #0369a1;
+  --accent-3: #38bdf8;
+  --good: #22c55e;
+  --warn: #f59e0b;
+  --bad: #ef4444;
+  --grad: linear-gradient(135deg, #0ea5e9 0%, #0369a1 45%, #1e40af 100%);
+  --grad-soft: linear-gradient(160deg, #111827 0%, #0f172a 100%);
+  --grad-glow: radial-gradient(ellipse 80% 60% at 70% 20%, rgba(14, 165, 233, 0.12), transparent 70%);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-lg: 22px;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+  --font-display: var(--font-sans);
+  --slide-pad-x: 88px;
+  --slide-pad-y: 68px;
+}

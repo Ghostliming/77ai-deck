@@ -22,7 +22,7 @@
   z-index: 0;
 }
 
-.deck-visual .slide > *:not(.deck-footer):not(.slide-bg):not(.cover-orbits):not(.cover-layout):not(.cover-visual):not(.closing-visual):not(.case-slide-body):not(aside.notes) {
+.deck-visual .slide > *:not(.deck-footer):not(.slide-bg):not(.cover-orbits):not(.cover-layout):not(.cover-visual):not(.closing-visual):not(.case-slide-body):not(.demo-slide-main):not(.demo-screenshot-bar):not(.demo-screenshot-strip):not(.value-slide-main):not(aside.notes) {
   position: relative;
   z-index: 1;
 }
@@ -3650,6 +3650,149 @@
   max-width: 64px;
 }
 
+/* ---- Bottom screenshot strip (value pages 5–7 · demo page 9) ---- */
+.deck-visual.deck-native .slide-value.slide-value-shots {
+  justify-content: center !important;
+  align-items: stretch;
+  padding-top: 56px !important;
+  padding-bottom: 76px !important;
+}
+
+.deck-visual.deck-native .slide-value.slide-value-shots .value-slide-main {
+  flex: 0 1 auto;
+  width: 100%;
+  max-height: calc(100% - 4px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.deck-visual.deck-native .slide-value.slide-value-shots .value-body {
+  margin-top: 12px;
+}
+
+.deck-visual.deck-native .slide-value.slide-value-shots .value-callout {
+  margin-top: 10px;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder {
+  justify-content: center !important;
+  align-items: stretch;
+  padding-top: 56px !important;
+  padding-bottom: 76px !important;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder .demo-slide-main {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-height: calc(100% - 4px);
+  position: relative;
+  z-index: 1;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder .demo-screenshot-bar {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding-bottom: 0;
+}
+
+.deck-visual.deck-native .slide-value.slide-value-shots .demo-screenshot-bar {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding-bottom: 0;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder .demo-strip-hint,
+.deck-visual.deck-native .slide-value.slide-value-shots .demo-strip-hint {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder .demo-screenshot-strip,
+.deck-visual.deck-native .slide-value.slide-value-shots .demo-screenshot-strip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder .demo-thumb-item,
+.deck-visual.deck-native .slide-value.slide-value-shots .demo-thumb-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex: 0 0 auto;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder a.demo-thumb,
+.deck-visual.deck-native .slide-value.slide-value-shots a.demo-thumb {
+  display: block;
+  flex-shrink: 0;
+  width: 64px;
+  height: 36px;
+  line-height: 0;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  cursor: zoom-in;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder a.demo-thumb:hover,
+.deck-visual.deck-native .slide-demo-placeholder a.demo-thumb:focus-visible,
+.deck-visual.deck-native .slide-value.slide-value-shots a.demo-thumb:hover,
+.deck-visual.deck-native .slide-value.slide-value-shots a.demo-thumb:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.deck-visual.deck-native .slide-demo-placeholder a.demo-thumb img,
+.deck-visual.deck-native .slide-value.slide-value-shots a.demo-thumb img {
+  width: 64px;
+  height: 36px;
+  max-width: 64px;
+  max-height: 36px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.deck-visual.deck-native .slide-demo-placeholder .demo-thumb-item figcaption,
+.deck-visual.deck-native .slide-value.slide-value-shots .demo-thumb-item figcaption {
+  font-size: 11px;
+  line-height: 1.25;
+  color: var(--text-3);
+  text-align: center;
+  max-width: 68px;
+  white-space: nowrap;
+}
+
 .deck-native .case-img-placeholder {
   min-height: 200px;
   border: 1px dashed color-mix(in srgb, var(--accent) 35%, var(--border));
@@ -3774,12 +3917,16 @@
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card {
   min-height: 0;
   padding: 12px 14px;
-  gap: 6px;
+  gap: 7px;
+}
+
+.deck-native .signal-grid.signal-grid-3plus1 .signal-card .sig-tag {
+  font-size: 12px;
 }
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card p {
-  font-size: 13px;
-  line-height: 1.45;
+  font-size: 15px;
+  line-height: 1.48;
 }
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card-wide {
@@ -3792,10 +3939,11 @@
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card-wide .sig-tag {
   flex-shrink: 0;
+  font-size: 12px;
 }
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card-wide p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .deck-native .signal-card {

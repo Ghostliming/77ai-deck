@@ -3891,11 +3891,12 @@
 }
 
 .deck-native .value-body .insight-item {
-  padding: 12px 14px;
+  padding: 13px 16px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--surface);
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.52;
 }
 
 .deck-native .value-body .insight-item .idx {
@@ -3921,12 +3922,12 @@
 }
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card .sig-tag {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card p {
-  font-size: 15px;
-  line-height: 1.48;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card-wide {
@@ -3939,11 +3940,11 @@
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card-wide .sig-tag {
   flex-shrink: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .deck-native .signal-grid.signal-grid-3plus1 .signal-card-wide p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .deck-native .signal-card {
@@ -3967,7 +3968,7 @@
 
 .deck-native .signal-card p {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   color: var(--text-1);
 }
@@ -3988,7 +3989,7 @@
   border: 1px solid color-mix(in srgb, var(--value-accent) 35%, transparent);
   background: color-mix(in srgb, var(--value-accent) 7%, var(--surface));
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: var(--text-1);
@@ -4069,38 +4070,149 @@
 }
 
 .deck-native .slide-value-bridge .value-body {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
-.deck-native .slide-value-bridge .signal-grid-3plus1 .signal-card {
+.deck-native .value-demo-bridge {
+  margin: 16px 0 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text-2);
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px dashed color-mix(in srgb, var(--accent) 30%, var(--border));
+  background: color-mix(in srgb, var(--accent) 4%, var(--surface));
+}
+
+/* ---- Topic I · CRM pain entry (page 4) ---- */
+.deck-native .slide-crm-entry .headline {
+  margin-bottom: 0;
+}
+
+.deck-native .crm-pain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.deck-native .crm-pain-card {
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--warn, #d97706) 6%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--warn, #d97706) 22%, transparent);
+}
+
+.deck-native .crm-pain-num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--warn, #d97706);
+  margin-bottom: 6px;
+}
+
+.deck-native .crm-pain-card p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text-1);
+}
+
+.deck-native .crm-thesis-quote {
+  max-width: none;
+  font-size: 20px;
+  margin: 12px 0 0;
+  padding: 14px 18px;
+}
+
+.deck-native .crm-thesis-sub {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ---- deck-native · global body readable scale ---- */
+.deck-native .compare-wrap.readable .compare-table {
+  font-size: 15px;
+}
+
+.deck-native .compare-wrap.readable .compare-table th {
+  font-size: 14px;
   padding: 10px 12px;
 }
 
-.deck-native .slide-value-bridge .signal-grid-3plus1 .signal-card p {
-  font-size: 12px;
-  line-height: 1.4;
+.deck-native .compare-wrap.readable .compare-table td {
+  padding: 11px 13px;
+  line-height: 1.5;
 }
 
-.deck-native .slide-value-bridge .signal-grid-3plus1 .signal-card-wide {
-  padding: 9px 14px;
+.deck-native .value-body .insight-item {
+  font-size: 17px;
 }
 
-.deck-native .slide-value-bridge .signal-grid-3plus1 .signal-card-wide p {
-  font-size: 13px;
+.deck-native .value-lead.sub {
+  font-size: 17px;
 }
 
-.deck-native .slide-value-bridge .value-callout.trust {
-  margin-top: 10px;
-  padding: 12px 16px;
+.deck-native .its-body h4 {
+  font-size: 18px;
+}
+
+.deck-native .its-body p {
+  font-size: 15px;
+}
+
+.deck-native .its-hint {
+  font-size: 15px;
+}
+
+.deck-native .ivc-card h4 {
+  font-size: 19px;
+}
+
+.deck-native .ivc-card p {
+  font-size: 15px;
+}
+
+.deck-native .insight-merged-table .compare-table {
+  font-size: 15px;
+}
+
+.deck-native .recap-pain-item .rp-label {
   font-size: 14px;
 }
 
-.deck-native .slide-value-bridge .bridge-table-2 {
+.deck-native .recap-pain-item .rp-solution {
+  font-size: 16px;
+}
+
+.deck-native .recap-pain-item p {
+  font-size: 15px;
+}
+
+.deck-native .recap-trust-bar {
+  font-size: 15px;
+}
+
+.deck-native .slide-tech-crm .cap-item h4 {
+  font-size: 16px;
+}
+
+.deck-native .slide-tech-crm .cap-item .cap-q {
+  font-size: 14px;
+}
+
+.deck-native .slide-tech-crm .cap-item .cap-map {
   font-size: 12px;
 }
 
-.deck-native .slide-value-bridge .bridge-table-2 > div {
-  padding: 7px 12px;
+.deck-native .slide-entry .insight-essence {
+  font-size: 16px;
+  line-height: 1.58;
+}
+
+.deck-native .closing-pillar p {
+  font-size: 17px;
 }
 
 /* ---- Topic I · demo recap (page 10) ---- */
@@ -4450,6 +4562,247 @@
 
 .deck-native .slide-insight-overlay .headline {
   margin-bottom: 0;
+}
+
+/* ---- Topic II · three-step chain (page 15) ---- */
+.deck-native .slide-insight-chain .slide-insight-center {
+  transform: translateY(28px);
+}
+
+.deck-native .insight-three-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 920px;
+}
+
+.deck-native .its-step {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) 68px;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.deck-native .its-step-primary {
+  border-left: 3px solid var(--accent);
+}
+
+.deck-native .its-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.deck-native .its-body h4 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 650;
+  color: var(--text-1);
+}
+
+.deck-native .its-body p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.48;
+  color: var(--text-2);
+}
+
+.deck-native .its-arrow {
+  text-align: center;
+  color: var(--text-3);
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 0;
+}
+
+.deck-native a.its-thumb {
+  display: block;
+  width: 56px;
+  height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.deck-native a.its-thumb-good {
+  border-color: color-mix(in srgb, var(--good) 40%, var(--border));
+}
+
+.deck-native .its-hint {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ---- Topic II · ERP gap table (page 14) ---- */
+.deck-native .slide-erp-gap .compare-wrap.readable .compare-table {
+  font-size: 15px;
+}
+
+.deck-native .slide-erp-gap .compare-wrap.readable .compare-table th {
+  font-size: 14px;
+  padding: 10px 12px;
+}
+
+.deck-native .slide-erp-gap .compare-wrap.readable .compare-table td {
+  padding: 12px 14px;
+  line-height: 1.5;
+}
+
+/* ---- Topic II · merged paradigm + value (page 16) ---- */
+.deck-native .slide-insight-merged .headline {
+  margin-bottom: 0;
+}
+
+.deck-native .insight-merged-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.deck-native .insight-merged-table .compare-table {
+  font-size: 14px;
+}
+
+.deck-native .insight-merged-table .compare-table td,
+.deck-native .insight-merged-table .compare-table th {
+  padding: 10px 12px;
+  line-height: 1.48;
+}
+
+.deck-native .insight-value-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.deck-native .ivc-card {
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-top: 3px solid var(--good);
+}
+
+.deck-native .ivc-card.ivc-tech {
+  border-top-color: var(--accent);
+}
+
+.deck-native .ivc-card h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-1);
+  letter-spacing: 0.01em;
+}
+
+.deck-native .ivc-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.52;
+  color: var(--text-2);
+}
+
+.deck-native .insight-merged-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.deck-native .insight-r0-callback {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-2);
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.deck-native .insight-merged-footer .insight-case-row {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.deck-native .slide-insight-merged .insight-value-note {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-3);
+}
+
+/* ---- Topic I · CRM tech page (page 11) ---- */
+.deck-native .slide-tech-crm .cap-item .cap-map {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  color: var(--text-3);
+}
+
+.deck-native .slide-tech-crm .cap-item .cap-q {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+/* ---- Topic I · demo recap · pain mapping (page 10) ---- */
+.deck-native .recap-pain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.deck-native .recap-pain-item {
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-left: 3px solid var(--good);
+}
+
+.deck-native .recap-pain-item .rp-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--warn, #d97706);
+  margin-bottom: 6px;
+}
+
+.deck-native .recap-pain-item .rp-solution {
+  display: block;
+  font-size: 15px;
+  font-weight: 650;
+  color: var(--text-1);
+  margin-bottom: 4px;
+}
+
+.deck-native .recap-pain-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.48;
+  color: var(--text-2);
+}
+
+.deck-native .recap-trust-bar {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in srgb, var(--warn, #d97706) 25%, transparent);
+  background: color-mix(in srgb, var(--warn, #d97706) 5%, var(--surface));
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.deck-native .recap-trust-bar strong {
+  color: var(--text-1);
 }
 
 .deck-native .slide-insight-overlay .insight-phase-board {
@@ -4922,6 +5275,12 @@
   .deck-native .recap-trust { grid-template-columns: 1fr; }
   .deck-native .closing-dual { grid-template-columns: 1fr; }
   .deck-native .insight-value-layout { grid-template-columns: 1fr; }
+  .deck-native .insight-value-cards { grid-template-columns: 1fr; }
+  .deck-native .insight-merged-footer { grid-template-columns: 1fr; }
+  .deck-native .recap-pain-grid { grid-template-columns: 1fr; }
+  .deck-native .crm-pain-grid { grid-template-columns: 1fr; }
+  .deck-native .its-step { grid-template-columns: 36px minmax(0, 1fr); }
+  .deck-native .its-step .its-thumb { display: none; }
   .deck-native .insight-case-row { justify-content: flex-start; }
   .deck-native .demo-step::after { display: none; }
 }

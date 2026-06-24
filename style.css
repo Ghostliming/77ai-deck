@@ -4578,13 +4578,32 @@
 
 .deck-native .its-step {
   display: grid;
-  grid-template-columns: 36px minmax(0, 1fr) 68px;
+  grid-template-columns: 36px minmax(0, 1fr) auto;
   gap: 12px;
   align-items: center;
   padding: 12px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
+}
+
+.deck-native .its-step.its-step-no-thumb {
+  grid-template-columns: 36px minmax(0, 1fr);
+}
+
+.deck-native .its-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.deck-native .its-thumbs.its-thumbs-multi {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 188px;
+  gap: 5px;
 }
 
 .deck-native .its-step-primary {
@@ -5280,7 +5299,8 @@
   .deck-native .recap-pain-grid { grid-template-columns: 1fr; }
   .deck-native .crm-pain-grid { grid-template-columns: 1fr; }
   .deck-native .its-step { grid-template-columns: 36px minmax(0, 1fr); }
-  .deck-native .its-step .its-thumb { display: none; }
+  .deck-native .its-thumbs { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; max-width: none; margin-top: 8px; grid-column: 2 / -1; }
+  .deck-native .its-step.its-step-no-thumb { grid-template-columns: 36px minmax(0, 1fr); }
   .deck-native .insight-case-row { justify-content: flex-start; }
   .deck-native .demo-step::after { display: none; }
 }
